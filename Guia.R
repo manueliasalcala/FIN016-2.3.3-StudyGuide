@@ -1,1 +1,17 @@
-SELECT
+
+library(urca)
+library(tseries)
+library(astsa)
+library(forecast)
+library(foreign)
+library(timsac)
+library(vars)
+library(mFilter)
+library(dynlm)
+library(nlme)
+library(COINT)
+library(dplyr)
+library(dplyrAssist)
+library(quantmod)
+data <- read_excel("DATAGUIA1B.xlsx")
+
