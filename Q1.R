@@ -30,3 +30,4 @@ nvdia_nabla <- diff(nvdia)
 ts.plot(nvdia_nabla, main = "Diferencial de NVDIA", xlab = "Días",
         ylab = "Precios")
 nvdia_mu <- nvdia - nvdia_mean
+nvdia_prod_dif <- sum(head(nvdia_mu, -1) * tail(nvdia_mu, -1)) / sum(nvdia_mu^2)
