@@ -15,3 +15,18 @@ library(quantmod)
 library(readxl)
 data <- read_excel("DATAGUIA1B.xlsx")
 data <- data.frame(data)
+# Get nvdia data.
+nvdia <- data$NVIDIA
+#Get summary statistics.
+nvdia_mean <- mean(nvdia)
+nvdia_var <- var(nvdia)
+#Calculate returns.
+nvdia_ret <- diff(log(nvdia))
+#Graph returns.
+hist(nvdia_ret)
+ts.plot(nvdia_ret, main = "Rendimientos NVDIA", xlab = "Días", ylab = "Precios")
+#Get nabla
+nvdia_nabla <- diff(nvdia)
+ts.plot(nvdia_nabla, main = "Diferencial de NVDIA", xlab = "Días",
+        ylab = "Precios")
+nvdia_mu <- nvdia - nvdia_mean
