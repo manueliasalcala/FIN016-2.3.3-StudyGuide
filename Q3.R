@@ -31,5 +31,6 @@ abline(am_model, col = "red")
 am_ret_mean <- mean(am_ret)
 am_ret_var <- var(am_ret)
 am_ret_sd <- sd(am_ret)
+am_cv <- am_ret_sd / am_ret_mean
 cov_matrix_am <- cov(cbind(am_ret, spy_ret))
 cor_matrix_am <- cor(cbind(am_ret, spy_ret))

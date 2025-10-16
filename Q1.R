@@ -41,3 +41,5 @@ acf(nvdia, main = "Correlograma NVDIA")
 nvdia_prod_dif <- head(nvdia - mean(nvdia), -1) * tail(nvdia - mean(nvdia))
 
 ts.plot(nvdia_prod_dif, main = "Producto Difeencias NVDIA")
+
+ts.plot(nvdia, main = "Precios NVDIA", xlab = "Días", ylab = "Precios", col = "red")
