@@ -31,4 +31,4 @@ hsbc_res <- residuals(hsbc_ar)
 plot(hsbc_res, type = "l", main = "Residuales HSBC AR1")
 hist(hsbc_res, main = "Residuales HSBC AR1")
 
-forecast_hsbc <- predict(hsbc_ar, n.head = 1)
+forecast_hsbc <- predict(hsbc_ar, n.ahead = 1)
