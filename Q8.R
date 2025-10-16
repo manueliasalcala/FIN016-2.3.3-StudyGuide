@@ -28,8 +28,8 @@ hsbc_ar1_a1 <- coef(hsbc_ar)["ar1"]
 
 acf(hsbc, plot = TRUE)
 hsbc_res2 <- residuals(hsbc_ar2)
-plot(hsbc_res, type = "l", main = "Residuales HSBC AR2")
-hist(hsbc_res, main = "Residuales HSBC AR2")
+plot(hsbc_res2, type = "l", main = "Residuales HSBC AR2")
+hist(hsbc_res2, main = "Residuales HSBC AR2")
 
 forecast_hsbc <- predict(hsbc_ar, n.ahead = 1)
 forecast_hsbc2 <- predict(hsbc_ar2, n.ahead = 1)
