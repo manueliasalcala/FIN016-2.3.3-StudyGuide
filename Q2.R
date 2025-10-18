@@ -37,3 +37,6 @@ f1_ret_sd <- sd(f1_ret)
 f1_ret_cov_m <- cov(cbind(f1_ret, spy_ret))
 f1_ret_cor_m <- cor(cbind(f1_ret, spy_ret))
 f1_cv <- f1_ret_sd / f1_ret_mean
+
+sd(f1)
+sd(spy)

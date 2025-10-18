@@ -19,7 +19,6 @@ tsla <- data$TESLA
 x <- 1:length(tsla)
 
 tsla_ret <- diff(log(tsla))
-spy_ret <- diff(log(spy))
 
 tsla_model <- lm(tsla ~ x)
 
